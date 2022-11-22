@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(81, 128, 175);
+
+    
+}
+.contenedor{
+    margin: auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto 3fr auto;
+    grid-template-areas: 
+     "header header"
+     "main aside"
+     "footer footer";
+}
+.header{
+    background-color: rgb(71, 156, 242);
+    padding:1.2rem;
+    display:flex;
+    grid-area: header;
+    justify-content: space-around;
+    align-items: center;
+}
+.header img{
+    width: 60px;
+    border-radius: 20%;
+}
+.header nav ul{
+    list-style: none;
+    background-color: rgb(81, 128, 175);
+    display: flex;
+    justify-content: flex-end;
+}
+.header nav ul a{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 0.7rem;
+    display: block;
+    transition: all 1s ease;
+}
+.header nav li a:hover{
+    background-color: #f6f3f3;
+    color:black;
+    font-weight: bold;
+    transform: scale(1,2);
+}
+.main{
+    background-color: white;
+    padding:1.2rem;
+    grid-area: main;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.main h1{
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-align: center;
+    padding: 1rem;
+}
+.main p{
+    line-height: 1.5;
+    padding: 1rem;
+}
+.main .img{
+   text-align: center;
+   padding: 1rem;
+}
+.aside{
+    background-color: #e5e6e6;
+    padding:1.2rem;
+    display: flex;
+    flex-direction: column;
+    grid-area: aside;
+    justify-content: space-between;
+}
+.aside h2{
+    padding:  2rem;
+    word-spacing: 20px;
+    font-family: 'Sedgwick Ave Display', cursive;
+    align-self: center;
+    margin:1rem;
+}
+.aside .img{
+    align-self: center;
+    margin: 1rem;
+}
+.footer{
+    background-color: rgb(71, 156, 242);
+    opacity: 80%;
+    padding:1.2rem;
+    display: flex;
+    justify-content: space-between;
+    grid-area: footer;
+    text-align: center;
+    display: inline-block;
+}
+.footer p{
+    color: white;
+}
+.footer ul li{
+    background-color: rgb(71, 156, 242);
+    font-size: 2rem;
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+    display: inline-block;
+    color: black;
+    list-style-type: none;
+    transition: all 1s ease;
+}
+.footer ul li:hover{
+    background-color: rgb(246, 246, 246);
+    transform: scale(1.5, 1.5)
+}
+.footer ul li a{
+    color: rgb(0, 0, 0);
+}
+@media screen and (max-width:700px) {
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 2fr auto auto;
+        grid-template-areas: 
+     "header"
+     "main"
+     "aside"
+     "footer";
+    } 
