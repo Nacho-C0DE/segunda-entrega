@@ -10,28 +10,31 @@
     <link rel="stylesheet" href="https://fontawesome.com/">
     <script src="https://kit.fontawesome.com/38ba9461c2.js" crossorigin="anonymous"></script>
     <link rel="shorcut icon" href="./imagenes/favicon.ico">
-	<linkrel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-	<link rel="stylesheet" href="./estilo.css">
-    <title>Zomia | Tienda🐶</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="../estilo.css">
+	<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <title>ZOshoes | Tienda de calzados</title>
 	
 </head>
 <body>
 	<div class="contenedor">
 		<header class="header">
-			<img src="../imagenes/huella.png" alt="Logo_perro">
+			<img class= "animate__animated animate__heartBeat" src="../imagenes/jordan.logo1.png" alt="Logo">
 			<nav>
 				<ul>
 					<li>
-						<a href="../index.html">Inicio</a>
+						<a href="../index.html" target="_blank">Inicio</a>
 					</li>
 					<li>
-						<a href="#">Nosotros</a>
+						<a href="../page/registro.html" target="_blank">Registro</a>
 					</li>
 					<li>
-						<a href="#">Productos</a>
+						<a href="../page/productos.html"target="_blank">Productos</a>
 					</li>
 					<li>
-						<a href="https://web.whatsapp.com/">Contacto</a>
+						<a href="https://web.whatsapp.com/"target="_blank">Contacto</a>
 					</li>
 				</ul>
 			</nav>
@@ -39,7 +42,7 @@
 		<main class="main">
 			<h1>REGISTRATE!</h1>
 			<div class="img">
-				<img src="../imagenes/perrito1.jpg" alt="">
+				<img src="../imagenes/jordan1.jpg" width="100px" alt="">
 			</div>
 			<form action="">
 				<fieldset>
@@ -76,9 +79,9 @@
 		</main>
 		<aside class="aside">
 			<h2>Importante!</h2>
-			<p>Al resgistrarse contas con beneficios y descuentos exclusivos para todo los productos y/o servicio de ZOMIA. Ademas de participar para nuestros sorteos semanales!.</p>
+			<p>Al resgistrarse contas con beneficios y descuentos exclusivos para todo los productos y/o servicio de ZOshoes. Ademas de participar para nuestros sorteos semanales!.</p>
 			<div class="img">
-				<img src="../imagenes/huella.png" width="100px" alt="logo">
+				<img src="../imagenes/jordan.logo1.png" width="100px" alt="logo">
 			</div>
 		</aside>
 		<footer class="footer">
@@ -86,13 +89,22 @@
 				<p>Seguinos en nuestras redes sociales!</p>
 			</div>
 			<ul>
-                <li><a href="#" class="facebook"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#" class="pinterest"><i class="fa-brands fa-pinterest-p"></i></a></li>
-                <li><a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
-              </ul>
+				<li><a href="https://es-la.facebook.com/" target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a></li>
+				<li><a href="https://www.instagram.com/" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+				<li><a href="https://ar.pinterest.com/" target="_blank" class="pinterest"><i class="fa-brands fa-pinterest-p"></i></a></li>
+				<li><a href="https://www.whatsapp.com/?lang=es" target="_blank"  class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a></li>
+			  </ul>
 			</div>
 		</footer>
 	</div>
+	<script src="js/wow.moc.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script>
+			AOS.init();
+    </script>
+	<script src="./page/wow.min.js"></script>
+	<script>
+	new WOW().init();
+	</script>
 	
 </body>

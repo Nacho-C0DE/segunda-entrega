@@ -1,0 +1,87 @@
+.header {
+  background-color: #f29147;
+  padding: 1.2rem;
+  display: flex;
+  grid-area: header;
+  justify-content: space-around;
+  align-items: center; }
+  .header .header img {
+    width: 60px;
+    border-radius: 20%; }
+  .header .header nav ul {
+    list-style: none;
+    background-color: #0b0c0c;
+    display: flex;
+    justify-content: flex-end; }
+    .header .header nav ul .header nav ul a {
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: none;
+      padding: 0.7rem;
+      display: block;
+      transition: all 1s ease; }
+      .header .header nav ul .header nav ul a .header nav li a:hover {
+        background-color: #f6f3f3;
+        color: black;
+        font-weight: bold;
+        transform: scale(1, 2); }
+
+.main {
+  background-color: #802424;
+  padding: 1.2rem;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .main .main h1 {
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-align: center;
+    padding: 1rem; }
+  .main .main .img {
+    text-align: center;
+    padding: 1rem; }
+
+.aside {
+  background-color: #cfcfcf;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  grid-area: aside;
+  justify-content: space-between; }
+  .aside .aside h2 {
+    padding: 2rem;
+    word-spacing: 20px;
+    font-family: 'Sedgwick Ave Display', cursive;
+    align-self: center;
+    margin: 1rem; }
+  .aside .aside .img {
+    align-self: center;
+    margin: 1rem; }
+
+.footer {
+  background-color: #f29147;
+  padding: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  grid-area: footer;
+  text-align: center;
+  display: inline-block; }
+  .footer .footer p {
+    color: white; }
+  .footer .footer ul li a {
+    color: black; }
+  .footer .footer ul li:hover {
+    background-color: #f6f6f6;
+    transform: scale(1.5, 1.5); }
+
+@media screen and (max-width: 320px) {
+  .contenedor {
+    position: relative;
+    padding: 70px 0;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto auto;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-evenly;
+    grid-template-areas: "header" "main" "aside" "footer"; } }
